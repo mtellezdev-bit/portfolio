@@ -1,8 +1,8 @@
 .proyectos {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 80px 0;
-  border-top: 1px solid #2a2a2a;
+  border-top: 1px solid #2a2a35;
 
   &__header {
     max-width: 650px;
@@ -14,18 +14,19 @@
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 3px;
-    color: #888888;
+    color: #a855f7;
   }
 
   h2 {
     margin: 0 0 20px;
     font-size: 42px;
     line-height: 1.1;
+    color: #f5f5f7;
   }
 
   &__header > p:last-child {
     margin: 0;
-    color: #aaaaaa;
+    color: #a1a1ab;
     font-size: 18px;
     line-height: 1.6;
   }
@@ -37,16 +38,26 @@
 }
 
 .proyecto {
-  border: 1px solid #2a2a2a;
-  border-radius: 12px;
-  background: #171717;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  overflow: hidden;
+  border: 1px solid #2a2a35;
+  border-radius: 14px;
+  background: #14141c;
   transition:
     transform 0.2s ease,
     border-color 0.2s ease;
 
   &:hover {
     transform: translateY(-4px);
-    border-color: #555555;
+    border-color: #8b5cf6;
+  }
+
+  &__preview {
+    min-height: 220px;
+    background:
+      linear-gradient(135deg, rgba(168, 85, 247, 0.35), rgba(236, 72, 153, 0.18)),
+      repeating-linear-gradient(135deg, #1a1a24 0 2px, transparent 2px 14px);
   }
 
   &__contenido {
@@ -56,7 +67,7 @@
   &__numero {
     display: block;
     margin-bottom: 24px;
-    color: #777777;
+    color: #71717a;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -65,12 +76,13 @@
   h3 {
     margin: 0 0 14px;
     font-size: 26px;
+    color: #f5f5f7;
   }
 
   p {
-    max-width: 650px;
+    max-width: 480px;
     margin: 0 0 24px;
-    color: #aaaaaa;
+    color: #a1a1ab;
     font-size: 16px;
     line-height: 1.6;
   }
@@ -79,13 +91,63 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: 24px;
 
     span {
       padding: 6px 10px;
-      border: 1px solid #333333;
+      border: 1px solid #2a2a35;
       border-radius: 6px;
-      color: #bdbdbd;
+      color: #c7c7d1;
       font-size: 13px;
+    }
+  }
+
+  &__acciones {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  &__boton {
+    padding: 10px 18px;
+    border: 1px solid #2a2a35;
+    border-radius: 8px;
+    color: #f5f5f7;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+      border-color 0.2s ease,
+      opacity 0.2s ease;
+
+    &--primary {
+      border: none;
+      background: linear-gradient(135deg, #a855f7, #ec4899);
+    }
+
+    &:hover {
+      opacity: 0.9;
+      border-color: #8b5cf6;
+    }
+  }
+
+  &--proximo {
+    grid-template-columns: 1fr;
+    border-style: dashed;
+    opacity: 0.7;
+
+    h3 {
+      color: #c7c7d1;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .proyecto {
+    grid-template-columns: 1fr;
+
+    &__preview {
+      min-height: 160px;
     }
   }
 }
