@@ -1,0 +1,101 @@
+.portfolio {
+  min-height: 100vh;
+  padding: 80px 8%;
+  box-sizing: border-box;
+  background: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 0 140px;
+
+  &__eyebrow {
+    margin: 0 0 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #888888;
+  }
+
+  h1 {
+    margin: 0 0 24px;
+    font-size: clamp(48px, 8vw, 88px);
+    line-height: 1;
+  }
+
+  &__description {
+    max-width: 650px;
+    margin: 0 0 40px;
+    color: #b5b5b5;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    a {
+      padding: 14px 22px;
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: 0.2s ease;
+
+      &:hover {
+        background: #ffffff;
+        color: #121212;
+      }
+    }
+  }
+}
+
+.proyectos,
+.tecnologias,
+.contacto {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 0;
+  border-top: 1px solid #2a2a2a;
+
+  h2 {
+    margin: 0 0 20px;
+    font-size: 36px;
+  }
+
+  p {
+    margin: 0;
+    color: #aaaaaa;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 40px 24px;
+  }
+
+  .hero {
+    padding: 70px 0 100px;
+
+    &__description {
+      font-size: 18px;
+    }
+  }
+
+  .proyectos,
+  .tecnologias,
+  .contacto {
+    padding: 60px 0;
+
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
