@@ -1,76 +1,620 @@
 <section id="proyectos" class="proyectos">
 
   <div class="proyectos__header">
-    <p class="proyectos__eyebrow">MI TRABAJO</p>
 
-    <h2>Proyectos</h2>
+    <p class="proyectos__eyebrow">
+      MI TRABAJO
+    </p>
+
+    <h2>
+      Lo que he construido
+    </h2>
 
     <p>
-      Algunos proyectos que muestran mi experiencia desarrollando
-      aplicaciones web y soluciones frontend.
+      Proyectos personales y experiencia profesional desarrollando
+      aplicaciones web, interfaces y soluciones frontend.
     </p>
+
   </div>
 
-  <div class="proyectos__lista">
+  <div class="proyectos__grupo">
 
-    <article class="proyecto">
-      <div class="proyecto__preview" aria-hidden="true"></div>
+    <div class="proyectos__grupo-header">
+
+      <span class="proyectos__grupo-linea"></span>
+
+      <p>
+        PROYECTOS PERSONALES
+      </p>
+
+    </div>
+
+
+    <article class="proyecto proyecto--personal">
+
+      <div
+        class="proyecto__preview"
+        aria-hidden="true"
+      >
+
+        <span class="proyecto__preview-code">
+          CRUD
+        </span>
+
+        <span class="proyecto__preview-glow"></span>
+
+      </div>
+
 
       <div class="proyecto__contenido">
 
-        <span class="proyecto__numero">01</span>
+        <div class="proyecto__meta">
 
-        <h3>Administrador de negocio</h3>
+          <span class="proyecto__tipo">
+            PROYECTO PERSONAL
+          </span>
+
+        </div>
+
+
+        <h3>
+          Administrador de negocio
+        </h3>
+
 
         <p>
           Aplicación web para administrar información de clientes,
           personal, productos y citas mediante operaciones CRUD.
         </p>
 
+
         <div class="proyecto__tecnologias">
+
           <span>Angular</span>
+
           <span>TypeScript</span>
+
           <span>SCSS</span>
+
           <span>REST API</span>
+
         </div>
 
+
         <div class="proyecto__acciones">
+
           <a
             class="proyecto__boton proyecto__boton--primary"
             href="https://github.com/mtellezdev-bit"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Ver proyecto
-          </a>
-          <a
-            class="proyecto__boton"
-            href="https://github.com/mtellezdev-bit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            <i class="fa-brands fa-github"></i>
+
             GitHub
           </a>
+
         </div>
 
       </div>
-    </article>
 
-    <article class="proyecto proyecto--proximo">
-      <div class="proyecto__contenido">
-
-        <span class="proyecto__numero">02</span>
-
-        <h3>Próximo proyecto</h3>
-
-        <p>
-          Aquí podremos agregar otro proyecto conforme vayamos
-          construyendo el portafolio.
-        </p>
-
-      </div>
     </article>
 
   </div>
+
+  <div class="proyectos__grupo proyectos__grupo--profesional">
+
+    <div class="proyectos__grupo-header">
+
+      <span class="proyectos__grupo-linea"></span>
+
+      <p>
+        EXPERIENCIA PROFESIONAL
+      </p>
+
+    </div>
+
+
+    <div class="proyectos__lista">
+
+      <article class="proyecto proyecto--profesional">
+
+        <div
+          class="proyecto__preview"
+          aria-hidden="true"
+        >
+
+          <span class="proyecto__preview-code">
+            &lt;/&gt;
+          </span>
+
+          <span class="proyecto__preview-glow"></span>
+
+        </div>
+
+
+        <div class="proyecto__contenido">
+
+          <div class="proyecto__meta">
+
+            <span class="proyecto__tipo">
+              EXPERIENCIA PROFESIONAL
+            </span>
+
+          </div>
+
+
+          <h3>
+            Plataforma de creación de chatbots
+          </h3>
+
+
+          <p>
+            Desarrollo de interfaces para una plataforma
+            orientada a la creación y gestión de chatbots.
+          </p>
+
+
+          <div class="proyecto__tecnologias">
+
+            <span>Angular</span>
+
+            <span>TypeScript</span>
+
+            <span>REST APIs</span>
+
+          </div>
+
+
+          <div class="proyecto__detalle">
+
+            <span>
+              <i class="fa-solid fa-code"></i>
+              Interfaces y componentes
+            </span>
+
+            <span>
+              <i class="fa-solid fa-plug"></i>
+              Integración con APIs
+            </span>
+
+            <span>
+              <i class="fa-solid fa-gears"></i>
+              Implementación de métodos
+            </span>
+
+          </div>
+
+
+          <div class="proyecto__acciones">
+
+            <button
+              type="button"
+              class="proyecto__boton proyecto__boton--info"
+              (click)="abrirInformacion(proyectosProfesionales[0])"
+            >
+              <i class="fa-solid fa-plus"></i>
+
+              Información
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="proyecto proyecto--profesional">
+
+        <div
+          class="proyecto__preview"
+          aria-hidden="true"
+        >
+
+          <span class="proyecto__preview-code">
+            01:30
+          </span>
+
+          <span class="proyecto__preview-glow"></span>
+
+        </div>
+
+
+        <div class="proyecto__contenido">
+
+          <div class="proyecto__meta">
+
+            <span class="proyecto__tipo">
+              EXPERIENCIA PROFESIONAL
+            </span>
+
+          </div>
+
+
+          <h3>
+            Agenda y calendario
+          </h3>
+
+
+          <p>
+            Desarrollo y mantenimiento de interfaces para la
+            gestión de agendas, citas y eventos.
+          </p>
+
+
+          <div class="proyecto__tecnologias">
+
+            <span>Angular</span>
+
+            <span>TypeScript</span>
+
+            <span>REST APIs</span>
+
+          </div>
+
+
+          <div class="proyecto__detalle">
+
+            <span>
+              <i class="fa-solid fa-calendar-days"></i>
+              Calendarios y eventos
+            </span>
+
+            <span>
+              <i class="fa-solid fa-server"></i>
+              Consumo de servicios
+            </span>
+
+            <span>
+              <i class="fa-solid fa-wrench"></i>
+              Mantenimiento
+            </span>
+
+          </div>
+
+
+          <div class="proyecto__acciones">
+
+            <button
+              type="button"
+              class="proyecto__boton proyecto__boton--info"
+              (click)="abrirInformacion(proyectosProfesionales[1])"
+            >
+              <i class="fa-solid fa-plus"></i>
+
+              Información
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="proyecto proyecto--profesional">
+
+        <div
+          class="proyecto__preview"
+          aria-hidden="true"
+        >
+
+          <span class="proyecto__preview-code">
+            DOCS
+          </span>
+
+          <span class="proyecto__preview-glow"></span>
+
+        </div>
+
+
+        <div class="proyecto__contenido">
+
+          <div class="proyecto__meta">
+
+            <span class="proyecto__tipo">
+              EXPERIENCIA PROFESIONAL
+            </span>
+
+          </div>
+
+
+          <h3>
+            Plataforma de documentación
+          </h3>
+
+
+          <p>
+            Desarrollo de interfaces y componentes para una
+            plataforma orientada a la documentación.
+          </p>
+
+
+          <div class="proyecto__tecnologias">
+
+            <span>Angular</span>
+
+            <span>TypeScript</span>
+
+            <span>SCSS</span>
+
+          </div>
+
+
+          <div class="proyecto__detalle">
+
+            <span>
+              <i class="fa-solid fa-layer-group"></i>
+              Componentes
+            </span>
+
+            <span>
+              <i class="fa-solid fa-paintbrush"></i>
+              Interfaces
+            </span>
+
+            <span>
+              <i class="fa-solid fa-mobile-screen"></i>
+              Diseño responsivo
+            </span>
+
+          </div>
+
+
+          <div class="proyecto__acciones">
+
+            <button
+              type="button"
+              class="proyecto__boton proyecto__boton--info"
+              (click)="abrirInformacion(proyectosProfesionales[2])"
+            >
+              <i class="fa-solid fa-plus"></i>
+
+              Información
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="proyecto proyecto--profesional">
+
+        <div
+          class="proyecto__preview"
+          aria-hidden="true"
+        >
+
+          <span class="proyecto__preview-code">
+            &lt;fix /&gt;
+          </span>
+
+          <span class="proyecto__preview-glow"></span>
+
+        </div>
+
+
+        <div class="proyecto__contenido">
+
+          <div class="proyecto__meta">
+
+            <span class="proyecto__tipo">
+              EXPERIENCIA PROFESIONAL
+            </span>
+
+          </div>
+
+
+          <h3>
+            Mantenimiento y rediseño
+          </h3>
+
+
+          <p>
+            Corrección, mantenimiento y actualización de
+            aplicaciones existentes para mejorar su funcionamiento
+            y presentación.
+          </p>
+
+
+          <div class="proyecto__tecnologias">
+
+            <span>Angular</span>
+
+            <span>SCSS</span>
+
+            <span>TypeScript</span>
+
+          </div>
+
+
+          <div class="proyecto__detalle">
+
+            <span>
+              <i class="fa-solid fa-palette"></i>
+              Estilos y colores
+            </span>
+
+            <span>
+              <i class="fa-solid fa-image"></i>
+              Imágenes
+            </span>
+
+            <span>
+              <i class="fa-solid fa-puzzle-piece"></i>
+              Componentes
+            </span>
+
+          </div>
+
+
+          <div class="proyecto__acciones">
+
+            <button
+              type="button"
+              class="proyecto__boton proyecto__boton--info"
+              (click)="abrirInformacion(proyectosProfesionales[3])"
+            >
+              <i class="fa-solid fa-plus"></i>
+
+              Información
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+  @if (proyectoSeleccionado) {
+
+    <div
+      class="proyectos__modal"
+      (click)="cerrarInformacion()"
+    >
+
+      <div
+        class="proyectos__modal-contenido"
+        role="dialog"
+        aria-modal="true"
+        [attr.aria-label]="proyectoSeleccionado.titulo"
+        (click)="$event.stopPropagation()"
+      >
+
+        <button
+          type="button"
+          class="proyectos__modal-cerrar"
+          aria-label="Cerrar información"
+          (click)="cerrarInformacion()"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <div class="proyectos__modal-meta">
+
+          <span class="proyectos__modal-tipo">
+            EXPERIENCIA PROFESIONAL
+          </span>
+
+        </div>
+
+
+        <h3>
+          {{ proyectoSeleccionado.titulo }}
+        </h3>
+
+
+        <div class="proyectos__modal-confidencial">
+
+          <span class="proyectos__modal-confidencial-icono">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+
+          <div>
+
+            <strong>
+              Proyecto confidencial
+            </strong>
+
+            <p>
+              El proyecto y sus materiales visuales o de código
+              no se muestran públicamente debido a restricciones
+              de confidencialidad.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="proyectos__modal-seccion">
+
+          <p class="proyectos__modal-label">
+            MI PARTICIPACIÓN
+          </p>
+
+          <ul>
+
+            @for (
+              participacion of proyectoSeleccionado.participacion;
+              track participacion
+            ) {
+
+              <li>
+
+                <span class="proyectos__modal-check">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+
+                <span>
+                  {{ participacion }}
+                </span>
+
+              </li>
+
+            }
+
+          </ul>
+
+        </div>
+
+
+        <div class="proyectos__modal-seccion">
+
+          <p class="proyectos__modal-label">
+            EXPERIENCIA
+          </p>
+
+          <p class="proyectos__modal-experiencia">
+            {{ proyectoSeleccionado.experiencia }}
+          </p>
+
+        </div>
+
+
+        <div class="proyectos__modal-seccion">
+
+          <p class="proyectos__modal-label">
+            TECNOLOGÍAS
+          </p>
+
+          <div class="proyectos__modal-tecnologias">
+
+            @for (
+              tecnologia of proyectoSeleccionado.tecnologias;
+              track tecnologia
+            ) {
+
+              <span>
+                {{ tecnologia }}
+              </span>
+
+            }
+
+          </div>
+
+        </div>
+
+
+        <div class="proyectos__modal-footer">
+
+          <i class="fa-solid fa-shield-halved"></i>
+
+          Información presentada de forma general,
+          respetando las restricciones de confidencialidad.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  }
 
 </section>
